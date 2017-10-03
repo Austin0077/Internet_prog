@@ -1,0 +1,38 @@
+body {
+    background-image: url("images/road.jpeg");
+    background-repeat: no-repeat;
+    background-size:100%; 
+}
+/* This is an external style sheet file */
+h1, h2, h3 {
+color: #36C;
+font-weight: normal;
+letter-spacing: .4em;
+margin-bottom: 1em;
+text-align: center;
+/*text-transform: lowercase;*/
+}
+/* end of style rules. */
+p{
+	color: 0099CC;
+	font-weight: normal;
+	font-family: georgia;
+}
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+form{
+	background-color: transparent;
+	font-weight: unset;
+	font-family: Arial,helvetica,sans-serif;
+	/*background-image: url("images/book1.jpeg");
+	background-size: 50%;
+	background-position: top;*/
+}
