@@ -1,0 +1,38 @@
+	p{
+		font-family: sans-serif;
+		color: yellow;
+		background-color: black;
+		font-size: normal;
+		font-weight: bold;
+		font-style: italic;
+		text-align: justify;
+	}
+	p1{
+		font-family:arial;
+		color: #FFFFFF;
+		background-color: rgb(128,0,196);
+		text-align: justify;
+	}
+	p4{
+		font-family: helvetica;
+		color: purple;
+		background-color: maroon;
+		text-align: justify;
+		font-size:20pt;
+	}
+	
+	h2{color:rgb(128,0,196);
+	}
+	h4{color: FF8800;
+	}
+	h3{
+		color: olive;
+		font-family: helvetica,sans-serif,verdana;
+
+	}
+	h1{
+		font-color:blue;
+		font-weight: bold;
+		text-underline-position: center;
+		background-color: rgb(100,23,78);
+	}
