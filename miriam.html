@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Javascript</title>
+	<script type="text/JavaScript">
+	function abc(){
+		var mess1="Hello";
+		var mess2="Class";
+		alert("Welcome to Variables");
+		document.write(mess1+" "+mess2);
+		name=prompt("Enter Name");
+		alert(name);
+		num1=prompt("Enter Number 1");
+		num2=prompt("Enter Number 2");
+		num1=parseInt(num1);
+		num2=parseInt(num2);
+		num3=num1+num2;
+		num4=num1-num3;
+		alert("Addition of the Numbers is "+num3+"\nSubtraction is "+num4);
+	}
+	abc();
+	</script>
+</head>
+<body>
+<form>
+	<input type="button" name="cal" onclick="abc()" value="Calculate"></input>
+
+</form>
+</body>
+</html>
