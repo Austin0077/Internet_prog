@@ -26,8 +26,48 @@
 		}
 
 	</style>
+	<script type="text/JavaScript">
+	function ask(){
+	//prompt("Do you want to continue");
+	alert("Do you want to continue?");
+	}
+	function abc(){
+		var mess1="Hello";
+		var mess2;
+		mess2=prompt("Enter Your Name")
+		alert("Welcome to Variables");
+		document.write(mess1+" "+mess2);
+		name=mess2;
+		alert(name);
+		num1=prompt("Enter Number 1");
+		num2=prompt("Enter Number 2");
+		num1=parseInt(num1);
+		num2=parseInt(num2);
+		num3=num1+num2;
+		num4=num1-num3;
+		alert("Addition of the Numbers is "+num3+"\nSubtraction is "+num4);
+	}
+	function welcome()
+	{
+		alert("Welcome to Our Website");
+	}
+	function toolkit(){
+
+	}
+	function add()
+	{
+		var x;
+		var bio=document.getElementById("bio");
+		var eng=document.getElementById("eng");
+		var tot=document.getElementById("tot");
+		var avr=document.getElementById("avr");
+		tot.value=parseInt(tot.value);
+		tot.value=parseInt(bio.value)+parseInt(eng.value);
+		avr.value=(tot.value)/2;
+	}
+</script>
 </head>
-<body>
+<body onloadstart="welcome()">
 <header>Working with Css</header>
 <h1 style="color:blue; font-weight: normal; font-color:blue">Working with css</h1>
 <h2><b>Working with css</b></h2>
@@ -42,6 +82,24 @@
 <p>
 	MMU is the only univesity not named afer a dead person or a place.No woman will chose 6 pack over 6 cars, This were the great quotes rendered to us by our beloved Finance secretary, only that he is hated by both ladies and gentlemen alike. 
 </p>
+<form>
+	First Name<input type="text" name="txtfname" placeholder="First name">
+	Second Name<input type="text" name="txtsname" placeholder="Second Name">
+	<input type="button" name="btntest" value="Submit" onclick="ask()"><br>
+	<input type="submit" name="btnsend" value="Send" onclick="abc()">
+</form>
+<form>
+	Exam Analysis<br><br>
+	Name<input type="text" name="txtsname" placeholder="Name">&nbsp;&nbsp;&nbsp;
+	<input type="button" name="btncalculate" value="Calculate" onclick="add()"><br>
+	Biology<input type="text" name="txtbio" id="bio" placeholder="Biology">&nbsp;&nbsp;&nbsp;
+	<input type="button" name="btnclear" value="clear">
+	English<input type="text" id="eng" name="txteng">
+	Total<input type="text" name="txt total" id="tot">
+	Average<input type="text" name="txtavr" id="avr">
+
+</form>
+
 <footer>
 	Empowered By Austin
 </footer>
