@@ -3,9 +3,9 @@
 
 <head>
 	<title>Css</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
 	<style type="text/css">
 		body{
+			background: blue;
 			padding: 5em;
 			margin: 0 auto;
 			font-family: helvetica;
@@ -24,6 +24,7 @@
 		footer{
 			text-align: right;
 		}
+
 
 	</style>
 	<script type="text/JavaScript">
@@ -64,6 +65,28 @@
 		tot.value=parseInt(tot.value);
 		tot.value=parseInt(bio.value)+parseInt(eng.value);
 		avr.value=(tot.value)/2;
+		if (avr.value<100) {
+		if (avr.value<40) {
+			grade.value='E'
+		}
+		else if(avr.value<50)
+		{
+			grade.value='D'
+		}
+		else if(avr.value<60)
+		{
+			grade.value='C'
+		}
+		else if(avr.value<70)
+		{
+			grade.value='B'
+		}else 
+		{
+			grade.value='A'
+		}
+	}else{
+		grade.value='Invalid Marks'
+	}
 	}
 </script>
 </head>
@@ -90,13 +113,16 @@
 </form>
 <form>
 	Exam Analysis<br><br>
-	Name<input type="text" name="txtsname" placeholder="Name">&nbsp;&nbsp;&nbsp;
-	<input type="button" name="btncalculate" value="Calculate" onclick="add()"><br>
-	Biology<input type="text" name="txtbio" id="bio" placeholder="Biology">&nbsp;&nbsp;&nbsp;
+	Name<input type="text" name="txtsname" placeholder="Name">
+	<br>
+	Biology<input type="text" name="txtbio" id="bio" placeholder="Biology"><br>
+	
+	English<input type="text" id="eng" name="txteng" placeholder="English"><br>
+	Total<input type="text" name="txt total" id="tot" placeholder="Total"><br>
+	Average<input type="text" name="txtavr" id="avr" placeholder="Average"><br>
+	Grade<input type="text" name="txtgrade" id="grade" placeholder="Grade"><br>
+	<input type="button" name="btncalculate" value="Calculate" onclick="add()">
 	<input type="button" name="btnclear" value="clear">
-	English<input type="text" id="eng" name="txteng">
-	Total<input type="text" name="txt total" id="tot">
-	Average<input type="text" name="txtavr" id="avr">
 
 </form>
 
